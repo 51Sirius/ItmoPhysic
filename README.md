@@ -64,7 +64,7 @@ F_{d}=-\beta\fraq{d\phi}{dt}
 
 ##### Уравнение движения для первого маятника
 ```math
-m\fraq{d^2\phi_1}{dt^2}=-mg\phi_1-\beta\fraq{d\phi_1}{dt}+k(\fraq{\phi_2-\phi_1}{L1})
+m\frac{d^2\phi_1}{dt^2}=-mg\phi_1-\beta\frac{d\phi_1}{dt}+k(\frac{\phi_2-\phi_1}{L1})
 
-\fraq{d^2\phi_1}{dt^2}=-\fraq{g}{L}\phi_1-\fraq{\beta}{m}\fraq{d\phi_1}{dt}+\fraq{k}{mL1}(\phi_2-\phi_1)
+\frac{d^2\phi_1}{dt^2}=-\frac{g}{L}\phi_1-\frac{\beta}{m}\frac{d\phi_1}{dt}+\frac{k}{mL1}(\phi_2-\phi_1)
 ```
