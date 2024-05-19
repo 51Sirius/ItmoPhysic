@@ -51,31 +51,36 @@ time_end = 100
 - time_end - время моделирования
 
 ### №3 Вывод уравнений
-
+\Delata x = L1 (\phi_2-\phi_1) - Растяжение пружины
 Момент силы тяжести:
 
 ```math
-M_{g}=-mgsin(\Phi)\approx-mg\phi L 
+M_{g}=mgsin(\phi)\approx mg\phi L 
 ```
 
-Сила, действующая на маятник от пружины:
+Момент силы пружины:
 
 ```math
-F_{s}=-k(\Delta x)=-k(\frac{\phi_2-\phi_1}{L1})
+M_{k}=k \Delta x L1
 ```
 
-Сила затухания:
+Момент силы затухания:
 
 ```math
-F_{d}=-\beta\frac{d\phi}{dt}
+M_{d}=-\beta\frac{d\phi}{dt} L
 ```
 
-##### Уравнение движения для первого маятника
+Момент инерци:
+
+```math
+I = mL^2
+```
+##### Уравнение движения для второго маятника
 
 По второму закону Ньютона для вращательного движения
 
 ```math
-m\frac{d^2\phi_1}{dt^2}=-mg\phi_1-\beta\frac{d\phi_1}{dt}+k(\frac{\phi_2-\phi_1}{L1})
+I\frac{d^2\phi_1}{dt^2}=mg\phi L -\beta\frac{d\phi}{dt} L +k (\phi_2-\phi_1) L1^2
 ```
 
 Переводим в вид ДУ
@@ -84,7 +89,7 @@ m\frac{d^2\phi_1}{dt^2}=-mg\phi_1-\beta\frac{d\phi_1}{dt}+k(\frac{\phi_2-\phi_1}
 \frac{d^2\phi_1}{dt^2}=-\frac{g}{L}\phi_1-\frac{\beta}{m}\frac{d\phi_1}{dt}+\frac{k}{mL1}(\phi_2-\phi_1)
 ```
 
-##### Уравнение движения для второго маятника
+##### Уравнение движения для первого маятника
 
 Аналогично
 
