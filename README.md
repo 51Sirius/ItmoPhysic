@@ -55,16 +55,18 @@ F_{g}=-mgsin(\phi)\approx-mg\phi
 Сила, действующая на маятник от пружины:
 
 ```math
-F_{s}=-k(\Delta\phi)=-k(\fraq{\phi_2-\phi_1}{L1})
+F_{s}=-k(\Delta\phi)=-k(\frac{\phi_2-\phi_1}{L1})
 ```
 
 ```math
-F_{d}=-\beta\fraq{d\phi}{dt}
+F_{d}=-\beta\frac{d\phi}{dt}
 ```
 
 ##### Уравнение движения для первого маятника
 ```math
 m\frac{d^2\phi_1}{dt^2}=-mg\phi_1-\beta\frac{d\phi_1}{dt}+k(\frac{\phi_2-\phi_1}{L1})
-
+```
+Переводим в вид ДУ
+```math
 \frac{d^2\phi_1}{dt^2}=-\frac{g}{L}\phi_1-\frac{\beta}{m}\frac{d\phi_1}{dt}+\frac{k}{mL1}(\phi_2-\phi_1)
 ```
