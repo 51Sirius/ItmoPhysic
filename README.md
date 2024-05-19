@@ -47,6 +47,8 @@ time_end = 100
 
 ### №3 Вывод уравнения
 
+Cила тяжести, действующая на маятник:
+
 ```math
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\left( F_{gravity}=-mgsin(\phi)\approx-mg\phi) 
 ```
