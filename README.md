@@ -55,13 +55,13 @@ time_end = 100
 Момент силы тяжести:
 
 ```math
-M_{g}=-mgsin(\Phi)\approx-mg\phiL
+M_{g}=-mgsin(\Phi)\approx-mg\phi L 
 ```
 
 Сила, действующая на маятник от пружины:
 
 ```math
-F_{s}=-k(\Deltax)=-k(\frac{\phi_2-\phi_1}{L1})
+F_{s}=-k(\Delta x)=-k(\frac{\phi_2-\phi_1}{L1})
 ```
 
 Сила затухания:
