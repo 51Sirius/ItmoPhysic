@@ -45,4 +45,8 @@ time_end = 100
 - dt - шаг интегрирования
 - time_end - время моделирования
 
-### №3 
+### №3 Вывод уравнения
+
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
