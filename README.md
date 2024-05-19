@@ -50,5 +50,5 @@ time_end = 100
 Cила тяжести, действующая на маятник:
 
 ```math
-\left( F_{gravity}=-mgsin(\phi)\approx-mg\phi)  \right
+F_{gravity}=-mgsin(\phi)\approx-mg\phi
 ```
