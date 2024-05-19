@@ -4,7 +4,6 @@ from scipy.integrate import solve_ivp
 from src.normal_frequencies import search_normal_frequencies
 from src.consts import *
 
-
 t_values = np.arange(0, time_end, dt)
 
 y0 = [phi_zero1, 0, phi_zero2, 0]
@@ -12,8 +11,8 @@ y0 = [phi_zero1, 0, phi_zero2, 0]
 
 def equations(t, y, m, g, L, k, L1, beta):
     phi1, dphi1_dt, phi2, dphi2_dt = y
-    d2phi1_dt2 = (-g / L) * np.sin(phi1) - (beta / m) * dphi1_dt + (k / m) * ((phi2 - phi1) / L1)
-    d2phi2_dt2 = (-g / L) * np.sin(phi2) - (beta / m) * dphi2_dt + (k / m) * ((phi1 - phi2) / L1)
+    d2phi1_dt2 = (-g / L) * np.sin(phi1) - (beta / (m * L)) * dphi1_dt + (k / 4 / m) * (phi2 - phi1)
+    d2phi2_dt2 = (-g / L) * np.sin(phi2) - (beta / (m * L)) * dphi2_dt - (k / 4 / m) * (phi1 - phi2)
     return [dphi1_dt, d2phi1_dt2, dphi2_dt, d2phi2_dt2]
 
 
@@ -62,5 +61,3 @@ plt.tight_layout()
 plt.show()
 
 search_normal_frequencies(g, m, k, L, L1)
-
-

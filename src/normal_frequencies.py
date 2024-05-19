@@ -3,8 +3,8 @@ import numpy as np
 
 def search_normal_frequencies(g, m, k, L, L1):
     # Матрица коэффициентов
-    a = g / L + k / (m * L1)
-    b = -k / (m * L1)
+    a = g / L + k / L1
+    b = -k / L1
 
     A = np.array([[a, b], [b, a]])
 

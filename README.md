@@ -72,7 +72,7 @@ M_{k}=k \Delta x L1
 Момент силы затухания:
 
 ```math
-M_{d}=-\beta\frac{d\phi}{dt} L
+M_{d}=\beta\frac{d\phi}{dt} L
 ```
 
 Момент инерци:
@@ -86,13 +86,13 @@ I = mL^2
 По второму закону Ньютона для вращательного движения
 
 ```math
-mL^2\frac{d^2\phi_2}{dt^2}=-mg\phi_2 L +\beta\frac{d\phi_2}{dt} L -k (\phi_2-\phi_1) L1^2
+mL^2\frac{d^2\phi_2}{dt^2}=-mg\phi_2 L -\beta\frac{d\phi_2}{dt} L -k (\phi_2-\phi_1) L1^2
 ```
 
 Переводим в вид ДУ
 
 ```math
-\frac{d^2\phi_2}{dt^2}=-\frac{g}{L}\phi_2+\frac{\beta}{mL}\frac{d\phi_2}{dt}-\frac{k}{4m}(\phi_2-\phi_1)
+\frac{d^2\phi_2}{dt^2}=-\frac{g}{L}\phi_2-\frac{\beta}{mL}\frac{d\phi_2}{dt}-\frac{k}{4m}(\phi_2-\phi_1)
 ```
 
 ##### Уравнение движения для первого маятника
@@ -100,13 +100,13 @@ mL^2\frac{d^2\phi_2}{dt^2}=-mg\phi_2 L +\beta\frac{d\phi_2}{dt} L -k (\phi_2-\ph
 Аналогично
 
 ```math
-mL^2\frac{d^2\phi_1}{dt^2}=-mg\phi_1 L +\beta\frac{d\phi_1}{dt} L +k (\phi_2-\phi_1) L1^2
+mL^2\frac{d^2\phi_1}{dt^2}=-mg\phi_1 L -\beta\frac{d\phi_1}{dt} L +k (\phi_2-\phi_1) L1^2
 ```
 
 Переводим в вид ДУ
 
 ```math
-\frac{d^2\phi_1}{dt^2}=-\frac{g}{L}\phi_1+\frac{\beta}{mL}\frac{d\phi_1}{dt}+\frac{k}{4m}(\phi_2-\phi_1)
+\frac{d^2\phi_1}{dt^2}=-\frac{g}{L}\phi_1-\frac{\beta}{mL}\frac{d\phi_1}{dt}+\frac{k}{4m}(\phi_2-\phi_1)
 ```
 
 Так как сила сопротивления 
