@@ -52,16 +52,16 @@ time_end = 100
 
 ### №3 Вывод уравнений
 
-Проекция силы тяжести на нормаль движения маятника:
+Момент силы тяжести:
 
 ```math
-F_{g}=-mgsin(\phi)\approx-mg\phi
+M_{g}=-mgsin(\Phi)\approx-mg\phiL
 ```
 
 Сила, действующая на маятник от пружины:
 
 ```math
-F_{s}=-k(\Delta\phi)=-k(\frac{\phi_2-\phi_1}{L1})
+F_{s}=-k(\Deltax)=-k(\frac{\phi_2-\phi_1}{L1})
 ```
 
 Сила затухания:
@@ -72,7 +72,7 @@ F_{d}=-\beta\frac{d\phi}{dt}
 
 ##### Уравнение движения для первого маятника
 
-По второму закону Ньютона
+По второму закону Ньютона для вращательного движения
 
 ```math
 m\frac{d^2\phi_1}{dt^2}=-mg\phi_1-\beta\frac{d\phi_1}{dt}+k(\frac{\phi_2-\phi_1}{L1})
@@ -97,3 +97,5 @@ m\frac{d^2\phi_2}{dt^2}=-mg\phi_2-\beta\frac{d\phi_2}{dt}+k(\frac{\phi_1-\phi_2}
 ```math
 \frac{d^2\phi_2}{dt^2}=-\frac{g}{L}\phi_2-\frac{\beta}{m}\frac{d\phi_2}{dt}+\frac{k}{mL1}(\phi_1-\phi_2)
 ```
+
+Так как сила сопротивления 
