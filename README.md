@@ -12,17 +12,21 @@
 должны задаваться.
 
 #### Код решения предоставлен в файле first_model.py
+
 ### №1 Первым этапом идет импорт библиотек
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 ```
+
 - numpy используется для численных расчетов и работы с массивами.
 - matplotlib.pyplot используется для построения графиков.
 - scipy.integrate.solve_ivp используется для численного решения системы обыкновенных дифференциальных уравнений (ОДУ).
 
 ### №2 Константы и параметры
+
 ```python
 g = 9.8
 m = 1.0
@@ -45,28 +49,50 @@ time_end = 100
 - dt - шаг интегрирования
 - time_end - время моделирования
 
-### №3 Вывод уравнения
+### №3 Вывод уравнений
 
 Cила тяжести, действующая на маятник:
 
 ```math
 F_{g}=-mgsin(\phi)\approx-mg\phi
 ```
+
 Сила, действующая на маятник от пружины:
 
 ```math
 F_{s}=-k(\Delta\phi)=-k(\frac{\phi_2-\phi_1}{L1})
 ```
 
+Сила затухания
+
 ```math
 F_{d}=-\beta\frac{d\phi}{dt}
 ```
 
 ##### Уравнение движения для первого маятника
+
+По второму закону Ньютона
+
 ```math
 m\frac{d^2\phi_1}{dt^2}=-mg\phi_1-\beta\frac{d\phi_1}{dt}+k(\frac{\phi_2-\phi_1}{L1})
 ```
+
 Переводим в вид ДУ
+
 ```math
 \frac{d^2\phi_1}{dt^2}=-\frac{g}{L}\phi_1-\frac{\beta}{m}\frac{d\phi_1}{dt}+\frac{k}{mL1}(\phi_2-\phi_1)
+```
+
+##### Уравнение движения для второго маятника
+
+Аналогично
+
+```math
+m\frac{d^2\phi_2}{dt^2}=-mg\phi_2-\beta\frac{d\phi_2}{dt}+k(\frac{\phi_1-\phi_2}{L1})
+```
+
+Переводим в вид ДУ
+
+```math
+\frac{d^2\phi_2}{dt^2}=-\frac{g}{L}\phi_2-\frac{\beta}{m}\frac{d\phi_2}{dt}+\frac{k}{mL1}(\phi_1-\phi_2)
 ```
