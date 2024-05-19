@@ -50,5 +50,21 @@ time_end = 100
 Cила тяжести, действующая на маятник:
 
 ```math
-F_{gravity}=-mgsin(\phi)\approx-mg\phi
+F_{g}=-mgsin(\phi)\approx-mg\phi
+```
+Сила, действующая на маятник от пружины:
+
+```math
+F_{s}=-k(\Delta\phi)=-k(\fraq{\phi_2-\phi_1}{L1})
+```
+
+```math
+F_{d}=-\beta\fraq{d\phi}{dt}
+```
+
+##### Уравнение движения для первого маятника
+```math
+m\fraq{d^2\phi_1}{dt^2}=-mg\phi_1-\beta\fraq{d\phi_1}{dt}+k(\fraq{\phi_2-\phi_1}{L1})
+
+\fraq{d^2\phi_1}{dt^2}=-\fraq{g}{L}\phi_1-\fraq{\beta}{m}\fraq{d\phi_1}{dt}+\fraq{k}{mL1}(\phi_2-\phi_1)
 ```
