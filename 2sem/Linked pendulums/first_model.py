@@ -60,4 +60,4 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 
-search_normal_frequencies(g, m, k, L, L1)
+search_normal_frequencies(g, m, k, L)

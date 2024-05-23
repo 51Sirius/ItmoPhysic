@@ -7,4 +7,4 @@ phi_zero1 = 0.01
 phi_zero2 = -0.3
 L1 = L / 3
 dt = 1
-time_end = 500
+time_end = 100
