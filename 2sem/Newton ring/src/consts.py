@@ -1,0 +1,3 @@
+Radius = ''
+Lamda = ''
+radius = ''
