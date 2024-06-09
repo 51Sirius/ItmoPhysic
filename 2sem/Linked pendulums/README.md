@@ -15,7 +15,16 @@
 
 #### Код решения предоставлен в файле first_model.py
 
-### №1 Первым этапом идет импорт библиотек
+### №1 Запуск модели
+
+Для запуска программы надо запустить run.py, после будет запущен графический интерфейс, написанный с помощью библиотеки
+tkinter.
+
+![Image alt](https://github.com/51Sirius/ItmoPhysic/raw/master/2sem/Linked%20pendulums/src/2.png)
+
+Нажав кнопку submit, построются графики
+
+### №2 Используемые библиотеки
 
 ```python
 import numpy as np
@@ -26,30 +35,6 @@ from scipy.integrate import solve_ivp
 - numpy используется для численных расчетов и работы с массивами.
 - matplotlib.pyplot используется для построения графиков.
 - scipy.integrate.solve_ivp используется для численного решения системы обыкновенных дифференциальных уравнений (ОДУ).
-
-### №2 Константы и параметры
-
-```python 
-g = 9.8
-m = 1.0
-k = 0.3
-L = 8.0
-beta = 0.05
-phi_zero1 = 0.3
-phi_zero2 = -0.3
-L1 = L / 2
-dt = 0.01
-time_end = 100
-```
-
-- g - ускорение свободного падения const
-- m - масса маятников
-- k - жесткость пружины
-- L - длина маятников
-- phi_zero1; phi_zero2 - начальные отклонения маятников
-- L1 - положение пружины
-- dt - шаг интегрирования
-- time_end - время моделирования
 
 ### №3 Вывод уравнений
 
@@ -92,7 +77,7 @@ mL^2\frac{d^2\phi_2}{dt^2}=-mg\phi_2 L -\beta\frac{d\phi_2}{dt} L -k (\phi_2-\ph
 Переводим в вид ДУ
 
 ```math
-\frac{d^2\phi_2}{dt^2}=-\frac{g}{L}\phi_2-\frac{\beta}{mL}\frac{d\phi_2}{dt}-\frac{k}{4m}(\phi_2-\phi_1)
+\frac{d^2\phi_2}{dt^2}=-\frac{g}{L}\phi_2-\frac{\beta}{mL}\frac{d\phi_2}{dt}-\frac{k}{m}(\phi_2-\phi_1)
 ```
 
 ##### Уравнение движения для первого маятника
@@ -106,7 +91,7 @@ mL^2\frac{d^2\phi_1}{dt^2}=-mg\phi_1 L -\beta\frac{d\phi_1}{dt} L +k (\phi_2-\ph
 Переводим в вид ДУ
 
 ```math
-\frac{d^2\phi_1}{dt^2}=-\frac{g}{L}\phi_1-\frac{\beta}{mL}\frac{d\phi_1}{dt}+\frac{k}{4m}(\phi_2-\phi_1)
+\frac{d^2\phi_1}{dt^2}=-\frac{g}{L}\phi_1-\frac{\beta}{mL}\frac{d\phi_1}{dt}+\frac{k}{m}(\phi_2-\phi_1)
 ```
 
 Так как сила сопротивления 

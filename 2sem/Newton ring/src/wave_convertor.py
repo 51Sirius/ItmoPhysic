@@ -21,5 +21,5 @@ def color_convertation(lamda):
     elif lamda <= 780:
         red, green, blue = 1, 0, 0
     else:
-        red, green, blue = 0, 0, 0
+        raise ValueError("Эту длину волны не видно")
     return red, green, blue
