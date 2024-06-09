@@ -10,21 +10,21 @@ def simulation():
                                                    float(entry_vars[1].get()),
                                                    float(entry_vars[2].get()))
         output_text.set(
-            f"{round(omega1, 2)} ГЦ")
-        output_text1.set(f"{round(omega2, 2)} ГЦ")
+            f"{round(omega1, 2)} Гц/Рад")
+        output_text1.set(f"{round(omega2, 2)} Гц/Рад")
         draw_plots(float(entry_vars[0].get()), float(entry_vars[1].get()), float(entry_vars[2].get()),
                    float(entry_vars[3].get()), float(entry_vars[4].get()), float(entry_vars[5].get()),
                    float(entry_vars[6].get()),
-                   float(entry_vars[7].get()), float(entry_vars[8].get()))
+                   float(entry_vars[7].get()), float(entry_vars[8].get()), float(entry_vars[9].get()))
 
     root = tk.Tk()
     root.title("LINKPEND")
-    list_box_names = ["Масса, Кг", "Жесткость пружины, Н/М", "Длина маятников, М", "Начальное отклонение №1, Гр",
-                      "Начальное отклонение №2, Гр", "Положение пружины, М", "Время моделирования от, С",
-                      "Время моделирования до, С", "Коэф затухания"]
+    list_box_names = ["Масса, Кг", "Жесткость пружины, Н/М", "Длина маятников, М", "Начальное отклонение №1, Рад",
+                      "Начальное отклонение №2, Рад", "Расстояние от точки крепления маятника до пружины, М", "Время моделирования от, С",
+                      "Время моделирования до, С", "Коэф затухания КгМ/с", "Временной шаг"]
     default_values = [
-        "1.0", "0.3", "8.0", "0.01", "-0.3",
-        "4.0", "1000.0", "1500.0", "0.01"
+        "1", "0.3", "8", "0.01", "-0.3",
+        "4", "0.0", "1000", "0.01", "5"
     ]
     entry_vars = [tk.StringVar(value=default_values[i]) for i in range(len(list_box_names))]
     output_text = tk.StringVar()

@@ -10,8 +10,7 @@ def equations(t, y, m, g, L, k, beta):
     return [dphi1_dt, d2phi1_dt2, dphi2_dt, d2phi2_dt2]
 
 
-def draw_plots(m, k, L, phi_zero1, phi_zero2, L1, time_start, time_end, beta, g=9.8):
-    dt = round((time_end - time_start) / 100, 2)
+def draw_plots(m, k, L, phi_zero1, phi_zero2, L1, time_start, time_end, beta, dt, g=9.8):
     t_values = np.arange(time_start, time_end, dt)
 
     y0 = [phi_zero1, 0, phi_zero2, 0]

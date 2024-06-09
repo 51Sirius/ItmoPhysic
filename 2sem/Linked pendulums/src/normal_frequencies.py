@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def search_normal_frequencies(m, k, L, g=9.8):
+def search_normal_frequencies(m, k, L, g=9.82):
     a = g / L - k / m
     b = k / m
 
