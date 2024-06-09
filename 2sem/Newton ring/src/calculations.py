@@ -3,7 +3,7 @@ from src.consts import *
 
 
 def intens_mono(wavelenght, r):
-    return cos((pi * r ** 2) / (RADIUS * wavelenght * 1e-9) + pi / 2) ** 2
+    return (cos(2*(pi * r ** 2) / (RADIUS * wavelenght * 1e-9) + pi)+1)/2
 
 
 def intens_quasimono(wavelenght, spectrum_width, r, T_cf=0.999, R_cf=0.001):

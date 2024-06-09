@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def search_normal_frequencies(g, m, k, L):
+def search_normal_frequencies(m, k, L, g=9.8):
     a = g / L - k / m
     b = k / m
 
@@ -12,4 +12,4 @@ def search_normal_frequencies(g, m, k, L):
     omega1 = np.sqrt(eigenvalues[0])
     omega2 = np.sqrt(eigenvalues[1])
 
-    print(f'Нормальные частоты: ω1 = {omega1:.4f} гц, ω2 = {omega2:.4f} гц')
+    return omega1, omega2
