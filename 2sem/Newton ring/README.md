@@ -27,5 +27,5 @@ tkinter.
 
 (1)
 ```math
-r_{disappear} = \sqrt{\frac{\lamda^2\cdotR}{\Delta \lamda}-\frac{R\cdot \lambda}{2}}
+r_{disappear} = \sqrt{\frac{\lambda^2 \cdot R}{\Delta \lambda}-\frac{R\cdot \lambda}{2}}
 ```
