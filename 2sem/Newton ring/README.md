@@ -27,30 +27,43 @@ tkinter.
 
 (1) расстояние от центра до
 положения исчезновения интерференционной картины
+
 ```math
 r_{disappear} = \sqrt{\frac{\lambda^2 \cdot R}{\Delta \lambda}-\frac{R\cdot \lambda}{2}}
 ```
+
 (2) Интенсивность монохромического света
+
 ```math
 I_{mono}(r)=2I_0(1+cos(\delta))
 ```
 
 (3) Интенсивность квазимонохромического света
+
 ```math
 I_{quasi}(r)=R(T^2+1+2Tsinc[\frac{\Delta \omega}{2c} \Delta_{opt}]cos[\frac{\omega_0}{c}\Delta_{opt}])
 ```
 
 Формула (1) выводиться из
+
 ```math
 \Delta \lambda = \frac{2\lambda^2R}{2r^2_{disappear}+R\lambda}
 ```
 
 В (2) подставляем дельту и получаем
+
 ```math
 I_{mono}(r)=2I_0(1+cos(\delta)) = 2I_0(1+cos(\frac{r^2}{R}))
 ```
 
 В (3) также подставляем разность оптического хода и частоты и получаем
+
 ```math
 I_{quasi}(r)=R(T^2+1+2Tsinc[\frac{\Delta \lambda r^2}{\lambda^2 R}]cos[\frac{2\pi r^2}{\lambda R}])
 ```
+
+### Итог
+
+При стандартных значениях программы вывод будет таким
+![Image alt](https://github.com/51Sirius/ItmoPhysic/raw/master/2sem/Newton%20ring/src/3.png)
+![Image alt](https://github.com/51Sirius/ItmoPhysic/raw/master/2sem/Newton%20ring/src/2.png)
