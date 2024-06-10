@@ -42,7 +42,7 @@ I_{quasi}(r)=R(T^2+1+2Tsinc[\frac{\Delta \omega}{2c} \Delta_{opt}]cos[\frac{\ome
 
 Формула (1) выводиться из
 ```math
-\Delta \lambda = \frac{2\lamnda^2R}{2r^2_{disappear}+R\lambda}
+\Delta \lambda = \frac{2\lambda^2R}{2r^2_{disappear}+R\lambda}
 ```
 
 В (2) подставляем дельту и получаем
@@ -51,6 +51,6 @@ I_{mono}(r)=2I_0(1+cos(\delta)) = 2I_0(1+cos(\frac{r^2}{R}))
 ```
 
 В (3) также подставляем разность оптического хода и частоты и получаем
-```
+```math
 I_{quasi}(r)=R(T^2+1+2Tsinc[\frac{\Delta \lambda r^2}{\lambda^2 R}]cos[\frac{2\pir^2}{\lambda R}])
 ```
