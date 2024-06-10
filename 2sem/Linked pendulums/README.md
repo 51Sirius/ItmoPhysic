@@ -95,3 +95,11 @@ mL^2\frac{d^2\phi_1}{dt^2}=-mg\phi_1 L -\beta\frac{d\phi_1}{dt} L +k (\phi_2-\ph
 ```
 
 Так как сила сопротивления 
+
+
+
+### Итог
+
+При стандартных значениях модели вывод будет таким
+
+![Image alt](https://github.com/51Sirius/ItmoPhysic/raw/master/2sem/Linked%20pendulums/src/2.png)
