@@ -29,3 +29,7 @@ tkinter.
 ```math
 r_{disappear} = \sqrt{\frac{\lambda^2 \cdot R}{\Delta \lambda}-\frac{R\cdot \lambda}{2}}
 ```
+(2)
+```math
+
+```
