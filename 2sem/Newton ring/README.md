@@ -25,11 +25,17 @@ tkinter.
 
 Во всем моделировании использовались следующие формулы:
 
-(1)
+(1) расстояние от центра до
+положения исчезновения интерференционной картины
 ```math
 r_{disappear} = \sqrt{\frac{\lambda^2 \cdot R}{\Delta \lambda}-\frac{R\cdot \lambda}{2}}
 ```
-(2)
+(2) Интенсивность монохромического света
 ```math
+I_{mono}(r)=4I_0cos^2(\frac{\delta}{2})
+```
 
+(3) Интенсивность квазимонохромического света
+```math
+I_{quasi}(r)=R(T^2+1+2Tsinc[\frac{\Delta \omega}{2c} \Delta_{opt}]cos[\frac{\omega_0}{c}\Delta_{opt}])
 ```
