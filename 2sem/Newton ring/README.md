@@ -52,5 +52,5 @@ I_{mono}(r)=2I_0(1+cos(\delta)) = 2I_0(1+cos(\frac{r^2}{R}))
 
 В (3) также подставляем разность оптического хода и частоты и получаем
 ```math
-I_{quasi}(r)=R(T^2+1+2Tsinc[\frac{\Delta \lambda r^2}{\lambda^2 R}]cos[\frac{2\pir^2}{\lambda R}])
+I_{quasi}(r)=R(T^2+1+2Tsinc[\frac{\Delta \lambda r^2}{\lambda^2 R}]cos[\frac{2\pi r^2}{\lambda R}])
 ```
