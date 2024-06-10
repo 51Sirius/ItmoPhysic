@@ -20,7 +20,7 @@
 Для запуска программы надо запустить run.py, после будет запущен графический интерфейс, написанный с помощью библиотеки
 tkinter.
 
-![Image alt](https://github.com/51Sirius/ItmoPhysic/raw/master/2sem/Linked%20pendulums/src/2.png)
+![Image alt](https://github.com/51Sirius/ItmoPhysic/raw/master/2sem/Linked%20pendulums/src/3.png)
 
 Нажав кнопку submit, построются графики
 
